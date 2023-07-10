@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Introduction</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .recipe h2 {
+            margin-top: 0;
+        }
+        .recipe p {
+            margin-bottom: 10px;
+        }
+        .recipe img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+        .recipe ol {
+            list-style-type: none;
+            text-align: center;
+            counter-reset: item;
+            padding-left: 0;
+        }
+        .recipe ol li {
+            counter-increment: item;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .recipe ol li::before {
+            content: counter(item) '.';
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>레시피 소개</h1>
+
+    <div class="recipe">
+        <h2>닭볶음탕</h2>
+        <img src="닭볶음탕.jpg" alt="Chicken Stir-Fried Soup">
+        <p>닭볶음탕은 매콤하고 풍미 있는 한국 요리입니다. 닭고기와 다양한 야채들을 함께 볶아내어 고기의 맛과 풍미를 더해주는 맛있는 스프입니다.</p>
+        <p>준비 시간: 20분</p>
+        <p>조리 시간: 40분</p>
+        <p>인원: 4인</p>
+        <h3>재료:</h3>
+        <p>닭고기(통닭) 1마리</p>
+        <p>감자 2개</p>
+        <p>당근 1개</p>
+        <p>양파 1개</p>
+        <p>파 1대</p>
+        <p>고추장 2큰술</p>
+        <p>고춧가루 1큰술</p>
+        <p>간장 1큰술</p>
+        <p>설탕 1작은술</p>
+        <p>다진 마늘 1큰술</p>
+        <p>다진 생강 1작은술</p>
+        <p>참기름 1큰술</p>
+        <p>물 4컵</p>
+        <h3>조리 방법:</h3>
+        <ol>
+            <li>닭고기를 적당한 크기로 자르고, 감자와 당근은 동일한 크기로 썰어줍니다.</li>
+            <li>파와 양파는 채 썰어 준비합니다.</li>
+            <li>닭고기를 뜨겁게 달군 팬에 넣고 약간의 기름을 함께 넣고 볶아줍니다.</li>
+            <li>고추장, 고춧가루, 간장, 설탕, 다진 마늘, 다진 생강, 참기름을 넣고 볶아줍니다.</li>
+            <li>감자와 당근을 넣고 볶은 후 물을 넣고 끓여줍니다.</li>
+            <li>양파와 파를 넣고 더 끓여줍니다.</li>
+            <li>맛을 보고 필요시 소금으로 간을 맞춰줍니다.</li>
+            <li>그릇에 담아 맛있게 즐깁니다.</li>
+        </ol>
+    </div>
+
+</body>
+</html>

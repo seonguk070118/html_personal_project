@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        li:hover {
+            background-color: #ddd;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>store</h1>
+
+        <ul>
+            <li><a href="https://wtable.co.kr/store">우리의 식당</a></li>
+            <li><a href="https://shop.10000recipe.com/">만개스토어</a></li>
+            <li><a href="https://www.foodingfactory.com/">푸딩팩토리</a></li>
+            <li><a href="http://food.dome365.com/">푸드도매</a></li>
+        </ul>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const list = document.querySelector('ul');
+            list.style.textAlign = 'center';
+        });
+    </script>
+</body>
+</html>

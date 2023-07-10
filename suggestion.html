@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cook</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .lis {
+            float: left;
+            padding: 0;
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        img {
+            float: none;
+            margin: 0;
+            padding: 0;
+            z-index: 5;
+            max-width: 313px;
+            max-height: 313px;
+            text-align: center;
+        }
+        .caption {
+            position: absolute;
+            top: 200px;
+            width: 313px;
+            height: 313px;
+            padding-top: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+            z-index: 10;
+        }
+        li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200px);
+        }
+        .caption h2,
+        .caption p {
+            color: white;
+            text-align: center;
+        }
+
+
+        #container {
+            width: 1000px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #totleground{
+            height: 50px;
+            background-color: rgb(70, 192, 70);
+            text-align: center;     
+        }
+        h1 {
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="totleground">
+            <h1>추천 조리법</h1>
+        </div>
+        <ul>
+            <li class="lis">
+                <img src="김치찌개.jpg" alt="">
+                <div class="caption">
+                    <h2>김치찌개</h2>
+                    <p>김치찌개 레시피</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/kimchi%20soup.html">자세히 알아보기</a>
+                </div>
+            </li>
+            <li class="lis">
+                <img src="팬케이크.png" alt="">
+                <div class="caption">
+                    <h2>팬케이크</h2>
+                    <p>팬케이크 레시피</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/pancake.html">자세히 알아보기</a>
+                </div>
+            </li>
+            <li class="lis">
+                <img src="닭볶음탕.jpg" alt="">
+                <div class="caption">
+                    <h2>닭볶음탕</h2>
+                    <p>닭볶음탕</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/Dak%20bokkeumtang.html">자세히 알아보기</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

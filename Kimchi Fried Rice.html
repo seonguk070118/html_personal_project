@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Introduction</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .recipe h2 {
+            margin-top: 0;
+        }
+        .recipe p {
+            margin-bottom: 10px;
+        }
+        .recipe img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+        .recipe ol {
+            list-style-type: none;
+            text-align: center;
+            counter-reset: item;
+            padding-left: 0;
+        }
+        .recipe ol li {
+            counter-increment: item;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .recipe ol li::before {
+            content: counter(item) '.';
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>레시피 소개</h1>
+
+    <div class="recipe">
+        <h2>김치볶음밥</h2>
+        <img src="김치볶음밥.jpg" alt="Kimchi Fried Rice">
+        <p>김치볶음밥은 한국 요리 중에서도 매우 유명한 요리입니다. 신선한 김치와 밥, 그리고 다양한 재료들을 볶아내어 매콤하고 풍부한 맛을 즐길 수 있는 요리입니다.</p>
+        <p>준비 시간: 15분</p>
+        <p>조리 시간: 15분</p>
+        <p>인원: 2인</p>
+        <h3>재료:</h3>
+        <p>밥 2그릇</p>
+        <p>김치 1컵</p>
+        <p>돼지고기 (삼겹살 또는 목살) 100g</p>
+        <p>양파 1/2개</p>
+        <p>당근 1/2개</p>
+        <p>대파 1대</p>
+        <p>계란 2개</p>
+        <p>간장 1큰술</p>
+        <p>참기름 1큰술</p>
+        <p>김 또는 김가루 약간</p>
+        <h3>조리 방법:</h3>
+        <ol>
+            <li>돼지고기는 얇게 썰어줍니다.</li>
+            <li>양파와 당근은 작은 크기로 다듬어줍니다.</li>
+            <li>대파는 어슷하게 썰어줍니다.</li>
+            <li>팬에 기름을 두르고 돼지고기를 볶아줍니다.</li>
+            <li>돼지고기가 익으면 양파와 당근을 넣고 볶아줍니다.</li>
+            <li>김치와 밥을 넣고 볶아줍니다.</li>
+            <li>간장과 참기름을 넣고 볶아줍니다.</li>
+            <li>마지막으로 대파를 넣고 볶아줍니다.</li>
+            <li>계란을 푼 후 팬 가장자리에 부어줍니다.</li>
+            <li>계란이 익으면 김 또는 김가루를 뿌려줍니다.</li>
+            <li>그릇에 담아 맛있게 즐깁니다.</li>
+        </ol>
+    </div>
+
+</body>
+</html>

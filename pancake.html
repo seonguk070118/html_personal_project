@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Introduction</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .recipe h2 {
+            margin-top: 0;
+        }
+        .recipe p {
+            margin-bottom: 10px;
+        }
+        .recipe img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+        .recipe ol {
+            list-style-type: none;
+            text-align: center;
+            counter-reset: item;
+            padding-left: 0;
+        }
+        .recipe ol li {
+            counter-increment: item;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .recipe ol li::before {
+            content: counter(item) '.';
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>레시피 소개</h1>
+
+    <div class="recipe">
+        <h2>부드러운 팬케이크</h2>
+        <img src="팬케이크.png" alt="Pancakes">
+        <p>부드러운 팬케이크는 간단한 재료로 만들어지며, 모두의 입맛을 사로잡는 음식입니다.</p>
+        <p>준비 시간: 15분</p>
+        <p>조리 시간: 10분</p>
+        <p>인원: 4인</p>
+        <h3>재료:</h3>
+        <p>밀가루 1컵</p>
+        <p>설탕 2큰 술</p>
+        <p>베이킹 파우더 1작은 술</p>
+        <p>베이킹 소다 1/2작은 술</p>
+        <p>소금 1/4작은 술</p>
+        <p>버터밀크 1컵</p>
+        <p>달걀 1개</p>
+        <p>녹인 버터 2큰 술</p>
+        <h3>조리 방법:</h3>
+        <ol>
+            <li>밀가루, 설탕, 베이킹 파우더, 베이킹 소다, 소금을 섞은 그릇에 넣고 섞어줍니다.</li>
+            <li>따로 그릇에 버터밀크, 달걀, 녹인 버터를 넣고 잘 섞어줍니다.</li>
+            <li>건재료를 넣은 그릇에 액체 재료를 부어 섞어줍니다.</li>
+            <li>뜨거운 팬이나 스키렛에 1/4컵씩 반죽을 부어 팬케이크를 만듭니다.</li>
+            <li>팬케이크 위에 거품이 생길 때까지 익힌 후 뒤집어 반쯤 익힌 후에 굳어지도록 익힙니다.</li>
+            <li>메이플 시럽이나 좋아하는 토핑과 함께 따뜻하게 내놓습니다.</li>
+        </ol>
+    </div>
+</body>
+</html>

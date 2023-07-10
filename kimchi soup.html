@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kimchi soup</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .recipe h2 {
+            margin-top: 0;
+        }
+        .recipe p {
+            margin-bottom: 10px;
+        }
+        .recipe img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+        .recipe ol {
+            list-style-type: none;
+            text-align: center;
+            counter-reset: item;
+            padding-left: 0;
+        }
+        .recipe ol li {
+            counter-increment: item;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .recipe ol li::before {
+            content: counter(item) '.';
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>레시피 소개</h1>
+
+    <div class="recipe">
+        <h2>김치찌개</h2>
+        <img src="김치찌개.jpg" alt="Kimchi Stew">
+        <p>김치찌개는 한국 음식 중에서도 가장 사랑받는 대표적인 요리입니다. 매운 맛이 특징인 이 찌개는 김치와 함께 다양한 재료들이 고소하게 어우러져 맛있게 먹을 수 있습니다.</p>
+        <p>준비 시간: 15분</p>
+        <p>조리 시간: 30분</p>
+        <p>인원: 4인</p>
+        <h3>재료:</h3>
+        <p>김치 2컵</p>
+        <p>돼지고기 (삼겹살 또는 목살) 200g</p>
+        <p>두부 1/2모</p>
+        <p>양파 1개</p>
+        <p>대파 1대</p>
+        <p>고춧가루 2큰술</p>
+        <p>고추장 1큰술</p>
+        <p>다진 마늘 1큰술</p>
+        <p>다진 생강 1작은술</p>
+        <p>참기름 1큰술</p>
+        <p>국물용 멸치 다시마 육수 4컵</p>
+        <p>소금 약간</p>
+        <h3>조리 방법:</h3>
+        <ol>
+            <li>돼지고기는 얇게 썬 후 김치와 함께 볼에 넣고 고춧가루, 고추장, 다진 마늘, 다진 생강, 참기름을 넣고 버무려줍니다.</li>
+            <li>양파와 대파는 채 썰어 준비합니다.</li>
+            <li>냄비에 국물용 멸치 다시마 육수를 붓고, 양념한 돼지고기와 김치를 넣고 끓여줍니다.</li>
+            <li>끓어오르면 뚜껑을 덮고 약한 불에서 10분 정도 끓여줍니다.</li>
+            <li>두부, 양파, 대파를 넣고 더 끓여줍니다.</li>
+            <li>맛을 보고 소금으로 간을 맞춰줍니다.</li>
+            <li>마지막으로 썬 고추를 고루 뿌려주고 뚜껑을 닫은 채로 1분 정도 더 끓여줍니다.</li>
+            <li>김치찌개를 그릇에 담아 맛있게 즐깁니다.</li>
+        </ol>
+    </div>
+
+</body>
+</html>

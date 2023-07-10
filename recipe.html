@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cook</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none
+        }
+        a {
+            text-decoration: none;
+            font-size: 14px
+        }
+        .menu {
+            width: 1000px;
+            overflow: hidden;
+            margin: 0px;
+        }
+        .menu>li {
+            width: 20%;
+            /*20*5=100%*/
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            background-color: rgb(70, 192, 70);
+        }
+        .menu a {
+            color: #fff;
+        }
+        .submenu>li {
+            line-height: 50px;
+            background-color: rgb(150, 226, 150);
+        }
+        .submenu {
+            height: 0;
+            overflow: hidden;
+        }
+        .menu>li:hover {
+            background-color: rgb(9, 92, 9);
+            transition-duration: 0.5s;
+        }
+        .menu>li:hover .submenu {
+            height: 250px;
+            /*서브메뉴 li한개의 높이 50*5*/
+            transition-duration: 1s;
+        }
+
+
+        #container {
+            width: 1000px;
+            margin: 20px auto;
+        }
+        #totleground{
+            height: 50px;
+            text-align: center;     
+        }
+        h1 {
+            text-align: center; 
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center align the content */
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+        .recipe-card {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 300px; /* Adjust the maximum width as needed */
+        }
+
+        .recipe-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .recipe-card p {
+            margin-bottom: 10px;
+        }
+
+        .recipe-card a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <main>
+            <section id="recipes">
+                <div class="recipe-card">
+                    <img src="김치찌개.jpg" alt="Recipe 1">
+                    <h3>김치찌개</h3>
+                    <p>김치찌개는 한국 음식 중에서도 가장 사랑받는 대표적인 요리입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/kimchi%20soup.html">자세히 알아보기</a>
+                </div>
+    
+                <div class="recipe-card">
+                    <img src="팬케이크.png" alt="Recipe 2">
+                    <h3>팬케이크</h3>
+                    <p>부드러운 팬케이크는 모두의 입맛을 사로잡는 음식입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/pancake.html">자세히 알아보기</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="닭볶음탕.jpg" alt="Recipe 3">
+                    <h3>닭볶음탕</h3>
+                    <p>닭볶음탕은 매콤하고 풍미 있는 한국 요리입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/Dak%20bokkeumtang.html">자세히 알아보기</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="불고기.jpg" alt="Recipe 3">
+                    <h3>불고기</h3>
+                    <p>불고기는 한국 요리 중에서도 가장 유명한 요리 중 하나입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/Bulgogi.html">자세히 알아보기</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="김치볶음밥.jpg" alt="Recipe 3">
+                    <h3>김치볶음밥</h3>
+                    <p>김치볶음밥은 한국 요리 중에서도 매우 유명한 요리입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/Kimchi%20Fried%20Rice.html">자세히 알아보기</a>
+                </div>  
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Introduction</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .recipe h2 {
+            margin-top: 0;
+        }
+        .recipe p {
+            margin-bottom: 10px;
+        }
+        .recipe img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+        .recipe ol {
+            list-style-type: none;
+            text-align: center;
+            counter-reset: item;
+            padding-left: 0;
+        }
+        .recipe ol li {
+            counter-increment: item;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .recipe ol li::before {
+            content: counter(item) '.';
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>레시피 소개</h1>
+
+    <div class="recipe">
+        <h2>불고기</h2>
+        <img src="불고기.jpg" alt="Beef Bulgogi">
+        <p>불고기는 한국 요리 중에서도 가장 유명한 요리 중 하나입니다. 소고기를 고기 양념장에 재운 뒤 구워내어 고기의 맛과 풍미를 최대한 살려낸 맛있는 요리입니다.</p>
+        <p>준비 시간: 30분</p>
+        <p>조리 시간: 15분</p>
+        <p>인원: 4인</p>
+        <h3>재료:</h3>
+        <p>소고기 (살치살 또는 등심) 500g</p>
+        <p>양파 1개</p>
+        <p>당근 1개</p>
+        <p>대파 2대</p>
+        <p>마늘 3쪽</p>
+        <p>간장 4큰술</p>
+        <p>설탕 3큰술</p>
+        <p>참기름 1큰술</p>
+        <p>후춧가루 약간</p>
+        <p>참기름 약간</p>
+        <h3>조리 방법:</h3>
+        <ol>
+            <li>소고기를 얇게 썬 후 양파와 당근은 채 썰어줍니다.</li>
+            <li>대파와 마늘은 다져줍니다.</li>
+            <li>소고기를 고기 양념장에 넣고 잘 버무려줍니다.</li>
+            <li>양파와 당근, 대파, 마늘을 넣고 고루 버무려줍니다.</li>
+            <li>불에 담배쳐준 후 고기를 구워줍니다.</li>
+            <li>완성된 불고기에 후춧가루와 참기름을 뿌려주고 섞어줍니다.</li>
+            <li>그릇에 담아 맛있게 즐깁니다.</li>
+        </ol>
+    </div>
+
+</body>
+</html>
