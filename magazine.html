@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website List</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        li:hover {
+            background-color: #ddd;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>magazine</h1>
+
+        <ul>
+            <li><a href="https://www.olivemagazine.co.kr/">olive</a></li>
+            <li><a href="https://www.10000recipe.com/issue/list.html?types=magazine">만개의 레시피</a></li>
+            <li><a href="http://www.realfoods.co.kr/section.php?sec=cook">리얼푸드</a></li>
+            <li><a href="http://www.hansikmagazine.org/">한식진흥원</a></li>
+        </ul>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const list = document.querySelector('ul');
+            list.style.textAlign = 'center';
+        });
+    </script>
+</body>
+</html>
