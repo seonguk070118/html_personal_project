@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cook</title>
     <style>
         * {
             padding: 0;
-            margin: 0
+            margin: 0;
+            box-sizing: border-box;
         }
         li {
             list-style: none
@@ -58,103 +59,100 @@
         }
         #totleground{
             height: 50px;
-            background-color: rgb(111, 222, 111);
             text-align: center;     
         }
         h1 {
             text-align: center; 
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+
+        body {
+            font-family: Arial, sans-serif;
         }
-        .lis {
-            float: left;
-            padding: 0;
-            margin: 10px;
-            overflow: hidden;
-            position: relative;
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center align the content */
         }
-        img {
-            float: none;
-            margin: 0;
-            padding: 0;
-            z-index: 5;
-            max-width: 313px;
-            max-height: 313px;
-            text-align: center;
+
+        section {
+            margin-bottom: 30px;
         }
-        .caption {
-            position: absolute;
-            top: 200px;
-            width: 313px;
-            height: 313px;
-            padding-top: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            opacity: 0;
-            transition: all 0.6s ease-in-out;
-            z-index: 10;
+        .recipe-card {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 300px; /* Adjust the maximum width as needed */
         }
-        li:hover .caption {
-            opacity: 1;
-            transform: translateY(-200px);
+
+        .recipe-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
         }
-        .caption h2,
-        .caption p {
-            color: white;
-            text-align: center;
+
+        .recipe-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .recipe-card p {
+            margin-bottom: 10px;
+        }
+
+        .recipe-card a {
+            text-decoration: none;
+            color: blue;
         }
     </style>
 </head>
 <body>
     <div id="container">
         <div id="totleground">
-            <h1>조리법 사이트</h1>
+            <h1>조리법</h1>
         </div>
         <ul class="menu">
             <li>
-                <a href="#">추천</a>
+                <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/suggestion.html">추천</a>
             </li>
             <li>
-                <a href="#">레시피</a>
+                <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/recipe.html">레시피</a>
             </li>
             <li>
-                <a href="file:///C:/Users/admin/Desktop/html/search.html">검색</a>
+                <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/search.html">검색</a>
             </li>
             <li>
-                <a href="#">매거진</a>
+                <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/magazine.html">매거진</a>
             </li>
             <li>
-                <a href="#">스토어</a>
+                <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/store.html">스토어</a>
             </li>
         </ul>
-        <ul>
-            <li class="lis">
-                <img src="김치찌개.jpg" alt="">
-                <div class="caption">
-                    <h2>김치찌개</h2>
-                    <p>김치찌개 레시피</p>
-                    <a href="#">자세히 알아보기</a>
+        <main>
+            <section id="recipes">
+                <div class="recipe-card">
+                    <img src="김치찌개.jpg" alt="Recipe 1">
+                    <h3>김치찌개</h3>
+                    <p>김치찌개는 한국 음식 중에서도 가장 사랑받는 대표적인 요리입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/kimchi%20soup.html">자세히 알아보기</a>
                 </div>
-            </li>
-            <li class="lis">
-                <img src="김치찌개.jpg" alt="">
-                <div class="caption">
-                    <h2>상품2</h2>
-                    <p>상품 2 설명 텍스트</p>
-                    <p>가격 : 12,345원</p>
+    
+                <div class="recipe-card">
+                    <img src="팬케이크.png" alt="Recipe 2">
+                    <h3>팬케이크</h3>
+                    <p>부드러운 팬케이크는 모두의 입맛을 사로잡는 음식입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/pancake.html">자세히 알아보기</a>
                 </div>
-            </li>
-            <li class="lis">
-                <img src="김치찌개.jpg" alt="">
-                <div class="caption">
-                    <h2>상품3</h2>
-                    <p>상품 3 설명 텍스트</p>
-                    <p>가격 : 12,345원</p>
+
+                <div class="recipe-card">
+                    <img src="닭볶음탕.jpg" alt="Recipe 3">
+                    <h3>닭볶음탕</h3>
+                    <p>닭볶음탕은 매콤하고 풍미 있는 한국 요리입니다.</p>
+                    <a href="file:///C:/Users/%EC%B5%9C%EC%84%B1%EC%9A%B1/Desktop/html%20%EA%B3%BC%EC%A0%9C/Dak%20bokkeumtang.html">자세히 알아보기</a>
                 </div>
-            </li>
-        </ul>
+            </section>
+        </main>
     </div>
 </body>
 
